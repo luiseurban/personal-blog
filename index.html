@@ -8,76 +8,125 @@
     <link rel="stylesheet" href="./assets/output.css">
 </head>
 
-<body class="max-w-xl lg:max-w-4xl mx-auto border-black min-h-dvh bg-gradient-to-b from-black via-sky-800 to-gray-900 ">
+<body class="bg-gradient-to-b from-black via-sky-800 to-gray-900 min-h-screen flex flex-col">
 
-    <header class="text-white">
-
-        <img src="./assets/transparent-background.png" alt="me-photo" class="h-70 bg-black rounded-full mx-auto border-4 border-sky-500 shadow-lg bg-gradient-to-b from-gray-800 to-black">
-
-        <header class="flex flex-col justify-center items-center mt-4">
-            <span class="text-sky-400 text-xl flex items-center justify-center font-mono font-semibold border-2 rounded-full px-3 py-1 shadow-sm bg-sky-950">
-                @luise
-                <svg class="ml-1 w-5 h-5 text-sky-400 inline" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                    <path fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707a1 1 0 00-1.414-1.414L9 11.172l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clip-rule="evenodd" />
-                  </svg>
-            </span>
-
-            <h1 class="text-3xl font-bold mt-2 text-center">
-                Luis Eduardo Urbano Caicedo
-            </h1>
-            
-            
-        </header>
-
-        <!--Linkedin-->
-        <section class="flex gap-3 justify-center mt-4">
-            <a class="bg-purple-100 size-12 sm:size-16 p-2 w-12 h-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
-                href="https://linkedin.com/in/luis-eduardo-urbano-caicedo-6b3911329" title="LinkedIn de Luise"
-                target="_blank">
-                <svg width="28" height="28">
-                    <use xlink:href="./assets/sprite.svg#linkedin"></use>
-                </svg>
-            </a>
-            <!--Github-->
-            <a class="bg-zinc-900 size-12 sm:size-16 p-2 w-12 h-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
-                href="https://github.com/luiseurban" title="Github de Luise" target="_blank">
-                <svg width="28" height="28">
-                    <use xlink:href="./assets/sprite.svg#github"></use>
-                </svg>
-            </a>
-            <!--Instagram-->
-            <a class="bg-gradient-to-r size-12 sm:size-16 from-pink-600 via-red-500 to-yellow-500 p-2 w-12 h-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
-                href="https://instagram.com" title="Instagram de Luise" target="_blank">
-                <svg width="28" height="28">
-                    <use xlink:href="./assets/sprite.svg#instagram"></use>
-                </svg>
-            </a>
-            <!--WhatsApp-->
-            <a class="bg-green-500 size-12 sm:size-16 p-2 w-12 h-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
-                href="https://wa.me/573207863220" title="WhatsApp de Luise" target="_blank">
-                <svg width="28" height="28">
-                    <use xlink:href="./assets/sprite.svg#whatsapp"></use>
-                </svg>
-            </a>
-            <!--Facebook-->
-            <a class="bg-blue-500 size-12 sm:size-16 p-2 w-12 h-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
-                title="Facebook de Luise" target="_blank">
-                <svg width="28" height="28">
-                    <use xlink:href="./assets/sprite.svg#facebook"></use>
-                </svg>
-            </a>
-        </section>
-
-        <p class="text-center text-m mt-4">Profesional en formación en Tecnología de Desarrollo de Software, con experiencia en desarrollo web y de escritorio. Manejo de diseño responsive, arquitectura MVC, consumo de APIs REST, bases de datos SQL/NoSQL y patrones de diseño. Competente en HTML, CSS, JavaScript, React, Python (Django), Java (JavaFX, Swing), C++ (Qt), Git y herramientas de testing. Familiarizado con entornos como VS Code, PyCharm, IntelliJ, Eclipse y NetBeans. Nivel básico en Office y lectura técnica en inglés.</p>
-
+    <!-- Header Section -->
+    <header class="bg-gray-800 text-white py-4 shadow-md w-full fixed top-0 left-0">
+        <nav class="flex justify-between items-center px-4 max-w-7xl mx-auto">
+            <h1 class="text-2xl font-bold">Luise Blog</h1>
+            <ul class="flex gap-4">
+                <li><a href="./pages/about.html" class="hover:text-sky-400">Sobre mí</a></li>
+                <li><a href="./pages/projects.html" class="hover:text-sky-400">Mis Proyectos</a></li>
+                <li><a href="./pages/contact.html" class="hover:text-sky-400">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="pt-4">
-        <h1 class="text-white font-extrabold mt-3 mb-3 justify-center text-center text-2xl">Mis Conocimientos y Habilidades</h1>
+    <main class="max-w-xl lg:max-w-4xl mx-auto pt-20 pb-16 flex-grow">
+        <header class="text-white">
+
+            <img src="./assets/transparent-background.png" alt="me-photo" class="h-70 bg-black rounded-full mx-auto border-4 border-sky-500 shadow-lg bg-gradient-to-b from-gray-800 to-black">
+
+            <header class="flex flex-col justify-center items-center mt-4">
+                <span class="text-sky-400 text-xl flex items-center justify-center font-mono font-semibold border-2 rounded-full px-3 py-1 shadow-sm bg-sky-950">
+                    @luise
+                    <svg class="ml-1 w-5 h-5 text-sky-400 inline" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707a1 1 0 00-1.414-1.414L9 11.172l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd" />
+                      </svg>
+                </span>
+
+                <h1 class="text-3xl font-bold mt-2 text-center">
+                    Luis Eduardo Urbano Caicedo
+                </h1>
+                
+                
+            </header>
+
+            <!--Linkedin-->
+            <section class="flex gap-3 justify-center mt-4">
+                <a class="bg-purple-100 size-12 sm:size-16 p-2 w-12 h-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+                    href="https://linkedin.com/in/luis-eduardo-urbano-caicedo-6b3911329" title="LinkedIn de Luise"
+                    target="_blank">
+                    <svg width="28" height="28">
+                        <use xlink:href="./assets/sprite.svg#linkedin"></use>
+                    </svg>
+                </a>
+                <!--Github-->
+                <a class="bg-zinc-900 size-12 sm:size-16 p-2 w-12 h-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+                    href="https://github.com/luiseurban" title="Github de Luise" target="_blank">
+                    <svg width="28" height="28">
+                        <use xlink:href="./assets/sprite.svg#github"></use>
+                    </svg>
+                </a>
+                <!--Instagram-->
+                <a class="bg-gradient-to-r size-12 sm:size-16 from-pink-600 via-red-500 to-yellow-500 p-2 w-12 h-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+                    href="https://www.instagram.com/luiseduardo_urbano/" title="Instagram de Luise" target="_blank">
+                    <svg width="28" height="28">
+                        <use xlink:href="./assets/sprite.svg#instagram"></use>
+                    </svg>
+                </a>
+                <!--WhatsApp-->
+                <a class="bg-green-500 size-12 sm:size-16 p-2 w-12 h-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+                    href="https://wa.me/573207863220" title="WhatsApp de Luise" target="_blank">
+                    <svg width="28" height="28">
+                        <use xlink:href="./assets/sprite.svg#whatsapp"></use>
+                    </svg>
+                </a>
+                <!--Facebook-->
+                <a class="bg-blue-500 size-12 sm:size-16 p-2 w-12 h-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform" href="https://www.facebook.com/share/1BR9e4TQu8/" title="Facebook de Luise" target="_blank">
+                    <svg width="28" height="28">
+                        <use xlink:href="./assets/sprite.svg#facebook"></use>
+                    </svg>
+                </a>
+            </section>
+
+            <!-- Enhanced Professional Section -->
+            <section class="mt-6 bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold text-center text-sky-400">Sobre mí</h2>
+                <p class="text-center mt-4 text-gray-300">
+                    Profesional en formación en Tecnología de Desarrollo de Software, con experiencia en desarrollo web y de escritorio.
+                </p>
+                <ul class="mt-4 space-y-2 text-gray-300">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-sky-400 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707a1 1 0 00-1.414-1.414L9 11.172l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        Diseño responsive y arquitectura MVC.
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-sky-400 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707a1 1 0 00-1.414-1.414L9 11.172l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        Consumo de APIs REST y bases de datos SQL/NoSQL.
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-sky-400 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707a1 1 0 00-1.414-1.414L9 11.172l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        Competente en HTML, CSS, JavaScript, React, Python, y más.
+                    </li>
+                </ul>
+
+                <!-- Buttons -->
+                <div class="mt-6 text-center space-y-4">
+                    <a href="./pages/about.html"
+                        class="inline-block bg-sky-600 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:bg-sky-500 active:scale-95">
+                        ¿Quieres saber más?
+                    </a>
+                    <a href="./pages/contact.html"
+                        class="inline-block bg-green-600 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:bg-green-500 active:scale-95">
+                        ¡Contáctame!
+                    </a>
+                </div>
+            </section>
+
+        </header>
+
+        <h1 id="skills" class="text-white font-extrabold mt-5 mb-3 justify-center text-center text-2xl">Mis Proyectos más destacados</h1>
         <div class="grid grid-cols-3 grid-rows-2 gap-2 w-full">
-            <a href="https://cursoreact.dev" class="
+            <a href="" class="
               relative rounded-3xl overflow-hidden
               bg-gradient-to-br from-cyan-900 via-cyan-700 to-cyan-500
               border border-cyan-900
@@ -96,10 +145,10 @@
                 <use xlink:href="./assets/sprite.svg#react" />
               </svg>
     
-              <span class="absolute top-2 left-4 text-xs border rounded-xl px-1 py-0.5">Curso de +14 clases</span>
+              <!-- <span class="absolute top-2 left-4 text-xs border rounded-xl px-1 py-0.5">Curso de +14 clases</span> -->
             </a>
     
-            <a href="https://midu.link/html" class="
+            <a href="" class="
               relative rounded-3xl overflow-hidden
               bg-gradient-to-br from-html via-orange-300 to-white
               border border-html
@@ -118,10 +167,10 @@
                 <use xlink:href="./assets/sprite.svg#html" />
               </svg>
     
-              <span class="absolute top-2 left-4 text-xs border rounded-xl px-1 py-0.5">Para principiantes</span>
+              <!-- <span class="absolute top-2 left-4 text-xs border rounded-xl px-1 py-0.5">Para principiantes</span> -->
             </a>
     
-            <a href="https://midu.link/html" class="
+            <a href="" class="
               relative rounded-3xl overflow-hidden
               bg-gradient-to-br from-[#663399] via-[#8e44ad] to-white
               border border-[#663399]
@@ -140,10 +189,10 @@
                 <use xlink:href="./assets/sprite.svg#css" />
               </svg>
     
-              <span class="absolute top-2 left-4 text-xs border rounded-xl px-1 py-0.5">Para principiantes</span>
+              <!-- <span class="absolute top-2 left-4 text-xs border rounded-xl px-1 py-0.5">Para principiantes</span> -->
             </a>
     
-            <a href="https://cursoreact.dev" class="
+            <a href="" class="
               relative rounded-3xl overflow-hidden
               bg-gradient-to-br from-[#215732] via-[#3C873A] to-[#8CC84B]
               border border-[#215732]
@@ -162,13 +211,21 @@
                 <use xlink:href="./assets/sprite.svg#node" />
               </svg>
     
-              <span class="absolute top-2 left-4 text-xs border rounded-xl px-1 py-0.5">Curso de +14 clases</span>
+              <!-- <span class="absolute top-2 left-4 text-xs border rounded-xl px-1 py-0.5">Curso de +14 clases</span> -->
             </a>
           </div>
     </main>
 
-    <footer class="text-white text-center mt-4">
-        Desarrollado por Luise
+    <footer class="bg-gray-800 text-white text-center py-6 w-full">
+        <div class="max-w-7xl mx-auto space-y-4">
+            <p class="text-sm">© 2023 Luis Eduardo Urbano Caicedo. Todos los derechos reservados.</p>
+            <div class="flex justify-center gap-4">
+                <a href="https://linkedin.com/in/luis-eduardo-urbano-caicedo-6b3911329" target="_blank" class="hover:text-sky-400">LinkedIn</a>
+                <a href="https://github.com/luiseurban" target="_blank" class="hover:text-sky-400">GitHub</a>
+                <a href="https://instagram.com" target="_blank" class="hover:text-sky-400">Instagram</a>
+            </div>
+            <p class="text-sm">Desarrollado por Luise.</p>
+        </div>
     </footer>
 
 </body>
