@@ -1,0 +1,15 @@
+{
+  "name": "proyecto-linktree",
+  "version": "1.0.0",
+  "description": "personal linktree",
+  "main": "index.js",
+  "scripts": {
+    "build:styles": "npx tailwindcss -i ./input.css -o ./assets/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.5",
+    "tailwindcss": "^4.1.5"
+  }
+}
