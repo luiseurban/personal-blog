@@ -342,6 +342,9 @@
   .h-40 {
     height: calc(var(--spacing) * 40);
   }
+  .h-50 {
+    height: calc(var(--spacing) * 50);
+  }
   .h-70 {
     height: calc(var(--spacing) * 70);
   }
@@ -354,6 +357,9 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
@@ -362,6 +368,9 @@
   }
   .w-40 {
     width: calc(var(--spacing) * 40);
+  }
+  .w-50 {
+    width: calc(var(--spacing) * 50);
   }
   .w-full {
     width: 100%;
